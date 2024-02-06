@@ -1,9 +1,15 @@
-function range(start, end, step = 1) {
-  // Add code.
+var countBsInRange = function (start, end) {
+  var numbers = range(start, end);
+  var stringNumbers = numbers.join("");
+  return countBs(stringNumbers);
 }
 
 function sum(numbers) {
-  // Add code.
+  let total = 0;
+  for (let i = 0; i < numbers.length; i++) {
+      total += numbers[i];
+  }
+  return total;
 }
 
 
